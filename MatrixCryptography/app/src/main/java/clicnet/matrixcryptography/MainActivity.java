@@ -91,24 +91,27 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         mMul[0][0] = Integer.valueOf(m1_1.getText().toString());
         mMul[0][1] = Integer.valueOf(m1_2.getText().toString());
-        mMul[0][2] = Integer.valueOf(m1_3.getText().toString());
-        mMul[0][3] = Integer.valueOf(m1_4.getText().toString());
-
         mMul[1][0] = Integer.valueOf(m2_1.getText().toString());
         mMul[1][1] = Integer.valueOf(m2_2.getText().toString());
-        mMul[1][2] = Integer.valueOf(m2_3.getText().toString());
-        mMul[1][3] = Integer.valueOf(m2_4.getText().toString());
 
-        mMul[2][0] = Integer.valueOf(m3_1.getText().toString());
-        mMul[2][1] = Integer.valueOf(m3_2.getText().toString());
-        mMul[2][2] = Integer.valueOf(m3_3.getText().toString());
-        mMul[2][3] = Integer.valueOf(m3_4.getText().toString());
+        if(mSize==3) {
 
-        mMul[3][0] = Integer.valueOf(m4_1.getText().toString());
-        mMul[3][1] = Integer.valueOf(m4_2.getText().toString());
-        mMul[3][2] = Integer.valueOf(m4_3.getText().toString());
-        mMul[3][3] = Integer.valueOf(m4_4.getText().toString());
+            mMul[0][2] = Integer.valueOf(m1_3.getText().toString());
+            mMul[1][2] = Integer.valueOf(m2_3.getText().toString());
+            mMul[2][0] = Integer.valueOf(m3_1.getText().toString());
+            mMul[2][1] = Integer.valueOf(m3_2.getText().toString());
+            mMul[2][2] = Integer.valueOf(m3_3.getText().toString());
+        }
+        if(mSize==4) {
 
+            mMul[0][3] = Integer.valueOf(m1_4.getText().toString());
+            mMul[1][3] = Integer.valueOf(m2_4.getText().toString());
+            mMul[2][3] = Integer.valueOf(m3_4.getText().toString());
+            mMul[3][0] = Integer.valueOf(m4_1.getText().toString());
+            mMul[3][1] = Integer.valueOf(m4_2.getText().toString());
+            mMul[3][2] = Integer.valueOf(m4_3.getText().toString());
+            mMul[3][3] = Integer.valueOf(m4_4.getText().toString());
+        }
         while(x.length()%mSize!=0){
             x += " ";
         }
