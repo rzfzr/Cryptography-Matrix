@@ -1,5 +1,6 @@
 package clicnet.matrixcryptography;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TabHost;
 import android.widget.TextView;
 
 import java.util.Arrays;
@@ -133,21 +135,21 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             for (int j = 0; j < x.length() / mSize; j++) {
                 for (int k = 0; k < mSize; k++) {
                     mTemp[i][j] = mMul[i][k] * mUser[k][j];
-                    result.append(Integer.toString(mTemp[i][j])+" ");
                     Log.v("int",Integer.toString(mTemp[i][j]));
                 }
             }
         }
 
-//        for (int i = 0; i < size; i++) {
-//            for (int j = 0; j < x.length() / size; j++) {
-//                for (int k = 0; k < size; k++) {
-//                    mTemp[i][j] = mMul[i][k] * mUser[k][j];
-//                    result.append(Integer.toString(mTemp[i][j])+" ");
-//                    Log.v("int",Integer.toString(mTemp[i][j]));
-//                }
-//            }
-//        }
+        for (int i = 0; i < mSize; i++) {//2
+            for (int j = 0; j < x.length() / mSize; j++) {//3
+                for (int k = 0; k < mSize; k++) {
+                    mTemp[i][j] += mMul[i][k] * mUser[k][j];
+                    if(k==0) {
+                        result.append(Integer.toString(mTemp[i][j]) + " ");
+                    }
+                }
+            }
+        }
 
         Log.v("EditText", x);
 

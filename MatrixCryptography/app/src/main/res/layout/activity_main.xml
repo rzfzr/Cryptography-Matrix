@@ -7,208 +7,232 @@
     android:layout_height="match_parent"
     tools:context="clicnet.matrixcryptography.MainActivity">
 
-    <TextView
-        android:textSize="24sp"
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Insira sua mensagem:"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 
-    <Button
 
-        android:textSize="20sp"
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Criptografar"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/tableLayout"
-        android:layout_centerHorizontal="true" />
 
-    <TextView
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="Insira sua mensagem:"
+                        android:textSize="24sp" />
 
-        android:textSize="24sp"
-        android:id="@+id/textViewResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="30dp" />
+                    <TableLayout
 
-    <EditText
+                        android:id="@+id/tableLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/editTextMessage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp">
 
-        android:textSize="24sp"
-        android:id="@+id/editTextMessage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:text="teste"
-        android:inputType="textMultiLine"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
 
-    <TableLayout
+                            <EditText
+                                android:id="@+id/m1_1"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:inputType="number"
+                                android:text="11"
+                                android:textAlignment="center" />
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:id="@+id/tableLayout"
-        android:layout_below="@+id/editTextMessage"
-        android:layout_centerHorizontal="true">
+                            <EditText
+                                android:id="@+id/m1_2"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:inputType="number"
+                                android:text="12"
+                                android:textAlignment="center" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+                            <EditText
+                                android:id="@+id/m1_3"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:inputType="number"
+                                android:text="13"
+                                android:textAlignment="center"
+                                android:visibility="visible" />
 
-            <EditText
-                android:id="@+id/m1_1"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:textAlignment="center"
-                android:text="11" />
+                            <EditText
+                                android:id="@+id/m1_4"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:inputType="number"
+                                android:text="14"
+                                android:textAlignment="center"
+                                android:visibility="visible" />
+                        </TableRow>
 
-            <EditText
-                android:id="@+id/m1_2"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:textAlignment="center"
-                android:text="12" />
-            <EditText
-                android:id="@+id/m1_3"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:textAlignment="center"
-                android:text="13"
-                android:visibility="visible"/>
-            <EditText
-                android:id="@+id/m1_4"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:textAlignment="center"
-                android:text="14"
-                android:visibility="visible"/>
-        </TableRow>
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+                            <EditText
+                                android:id="@+id/m2_1"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:inputType="number"
+                                android:text="21"
+                                android:textAlignment="center" />
 
-            <EditText
-                android:id="@+id/m2_1"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:textAlignment="center"
-                android:text="21" />
+                            <EditText
+                                android:id="@+id/m2_2"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:inputType="number"
+                                android:text="22"
+                                android:textAlignment="center" />
 
-            <EditText
-                android:id="@+id/m2_2"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:textAlignment="center"
-                android:text="22" />
+                            <EditText
+                                android:id="@+id/m2_3"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:inputType="number"
+                                android:text="23"
+                                android:textAlignment="center"
+                                android:visibility="visible" />
 
-            <EditText
-                android:id="@+id/m2_3"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:textAlignment="center"
-                android:text="23"
-                android:visibility="visible"/>
-            <EditText
-                android:id="@+id/m2_4"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:textAlignment="center"
-                android:text="24"
-                android:visibility="visible"/>
-        </TableRow>
+                            <EditText
+                                android:id="@+id/m2_4"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:inputType="number"
+                                android:text="24"
+                                android:textAlignment="center"
+                                android:visibility="visible" />
+                        </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
 
-            <EditText
-                android:id="@+id/m3_1"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:textAlignment="center"
-                android:text="31"
-                android:visibility="visible" />
+                            <EditText
+                                android:id="@+id/m3_1"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:inputType="number"
+                                android:text="31"
+                                android:textAlignment="center"
+                                android:visibility="visible" />
 
-            <EditText
-                android:id="@+id/m3_2"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:textAlignment="center"
-                android:text="32"
-                android:visibility="visible"/>
+                            <EditText
+                                android:id="@+id/m3_2"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:inputType="number"
+                                android:text="32"
+                                android:textAlignment="center"
+                                android:visibility="visible" />
 
-            <EditText
-                android:id="@+id/m3_3"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:textAlignment="center"
-                android:text="33"
-                android:visibility="visible"/>
+                            <EditText
+                                android:id="@+id/m3_3"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:inputType="number"
+                                android:text="33"
+                                android:textAlignment="center"
+                                android:visibility="visible" />
 
-            <EditText
-                android:id="@+id/m3_4"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:textAlignment="center"
-                android:text="34"
-                android:visibility="visible"/>
-        </TableRow>
+                            <EditText
+                                android:id="@+id/m3_4"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:inputType="number"
+                                android:text="34"
+                                android:textAlignment="center"
+                                android:visibility="visible" />
+                        </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
 
-            <EditText
-                android:id="@+id/m4_1"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:textAlignment="center"
-                android:text="41"
-                android:visibility="visible" />
+                            <EditText
+                                android:id="@+id/m4_1"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:inputType="number"
+                                android:text="41"
+                                android:textAlignment="center"
+                                android:visibility="visible" />
 
-            <EditText
-                android:id="@+id/m4_2"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:textAlignment="center"
-                android:text="42"
-                android:visibility="visible"/>
+                            <EditText
+                                android:id="@+id/m4_2"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:inputType="number"
+                                android:text="42"
+                                android:textAlignment="center"
+                                android:visibility="visible" />
 
-            <EditText
-                android:id="@+id/m4_3"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:textAlignment="center"
-                android:text="43"
-                android:visibility="visible"/>
+                            <EditText
+                                android:id="@+id/m4_3"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:inputType="number"
+                                android:text="43"
+                                android:textAlignment="center"
+                                android:visibility="visible" />
 
-            <EditText
-                android:id="@+id/m4_4"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:textAlignment="center"
-                android:text="44"
-                android:visibility="visible"/>
-        </TableRow>
-    </TableLayout>
+                            <EditText
+                                android:id="@+id/m4_4"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:inputType="number"
+                                android:text="44"
+                                android:textAlignment="center"
+                                android:visibility="visible" />
+                        </TableRow>
+                    </TableLayout>
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/editTextMessage"
-        android:layout_toEndOf="@+id/editTextMessage"
-        android:layout_toRightOf="@+id/editTextMessage"
-        android:layout_alignBottom="@+id/editTextMessage" />
+                    <TextView
+
+                        android:id="@+id/textViewResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/button"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="30dp"
+                        android:text=""
+                        android:textSize="24sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/editTextMessage"
+                        android:layout_alignTop="@+id/editTextMessage"
+                        android:layout_toEndOf="@+id/editTextMessage"
+                        android:layout_toRightOf="@+id/editTextMessage" />
+
+                    <EditText
+
+                        android:id="@+id/editTextMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView"
+                        android:layout_centerHorizontal="true"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:text="teste"
+                        android:textSize="24sp" />
+
+                    <Button
+
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tableLayout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text="Criptografar"
+                        android:textSize="20sp" />
+
+
 
 
 </RelativeLayout>
